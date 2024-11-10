@@ -1,0 +1,28 @@
+/* global.css */
+
+/* Tailwind CSS utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #b1efa3;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply text-foreground bg-background font-heebo;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
